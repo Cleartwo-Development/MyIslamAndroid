@@ -1,0 +1,51 @@
+package com.cleartwo.admin.myislam.ativities.StartSignUp;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageView;
+
+import com.cleartwo.admin.myislam.R;
+import com.cleartwo.admin.myislam.utilities.Const;
+
+public class SignUpEmailActivity extends AppCompatActivity {
+
+    EditText edit_text;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_sign_up_email);
+        edit_text = findViewById(R.id.edit_text);
+
+        ((View) findViewById(R.id.back_button)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                overridePendingTransition(R.anim.left_to_right_ani, R.anim.right_to_left_ani);
+            }
+        });
+
+        ((ImageView) findViewById(R.id.next_screen)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (!isEmailValid(edit_text.getText().toString().trim()))
+                    edit_text.setError("\"Your Email Id is Invalid");
+                else
+                    nextToSignUp(ChildAvatarActivity.class);
+            }
+        });
+    }
+
+    public void nextToSignUp(Class aClass) {
+        Const.signUpEmailActivity = SignUpEmailActivity.this;
+        startActivity(new Intent(SignUpEmailActivity.this, aClass));
+        overridePendingTransition(R.anim.enter_ani, R.anim.exit_ani);
+    }
+
+    boolean isEmailValid(CharSequence email) {
+        return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches();
+    }
+}

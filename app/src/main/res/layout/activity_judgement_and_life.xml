@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ativities.JudgementAndLifeActivity">
+
+    <RelativeLayout
+        android:id="@+id/tab_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/purpal_header_bg"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/home_title_bg"
+            android:paddingTop="24dp">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:src="@drawable/ic_arrow_back_button"
+                android:tint="@color/colorWhite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_bar_view">
+
+        <ImageView
+            android:id="@+id/img_thinking"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/basic_beliefs_bg" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/img_thinking">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Basic Beliefs"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_corner_grey"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/round_corner_blue"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="Day Of Judgement
+\n&amp; Life After Death"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text="“To God we belong and to Him we shall return”"
+                        android:textColor="@color/colorPurple"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="(The Holy Quran, 2:156)" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="Everyone will die at some point and it is Allah who
+decides when a person dies. During the short time we
+have on Earth, Muslims believe that it is important to try
+and be a good and decent person.
+\n\nAfter we die, we will stay in our graves until the Day of
+Judgement. On this day, everything on Earth will be
+destroyed and Allah will bring the dead back to life. This
+life after death is known as Akhirah in Arabic.
+\n\nOn the Day of Judgment, Allah will judge how each
+person has lived their lives. The people who obeyed
+Allah’s commands and performed good deeds will enter
+Jannah, or Paradise. In Jannah, there is nothing but
+happiness and joy. There is no pain or suffering in
+Paradise.
+\n\nThe people who have disobeyed Allah and carried out
+bad deeds will enter Jahannam, or Hell.
+\n\nAllah is the most forgiving, merciful and kind. Muslims
+must try to follow Allah’s guidance so that we can go to
+Jannah.
+"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="The five pillars of Islam"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_thinking"
+                            android:layout_margin="5dp"
+                            android:animateLayoutChanges="true">
+
+                            <TextView
+                                android:id="@+id/question_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorTabBar"
+                                android:drawableRight="@drawable/drop_down_btn"
+                                android:padding="5dp"
+                                android:text="Shahadah:"
+                                android:textColor="@color/colorPurple"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/answer_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/question_title"
+                                android:text="The Muslim profession of faith"
+                                android:textColor="@color/colorBlue"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_thinking"
+                            android:layout_margin="5dp"
+                            android:animateLayoutChanges="true">
+
+                            <TextView
+                                android:id="@+id/question_title1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorTabBar"
+                                android:drawableRight="@drawable/drop_down_btn"
+                                android:padding="5dp"
+                                android:text="Salat (prayer):"
+                                android:textColor="@color/colorPurple"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/answer_title1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/question_title1"
+                                android:text="Salat is the practice of prayer."
+                                android:textColor="@color/colorBlue"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_thinking"
+                            android:layout_margin="5dp"
+                            android:animateLayoutChanges="true">
+
+                            <TextView
+                                android:id="@+id/question_title2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorTabBar"
+                                android:drawableRight="@drawable/drop_down_btn"
+                                android:padding="5dp"
+                                android:text="Zakat:"
+                                android:textColor="@color/colorPurple"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/answer_title2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/question_title2"
+                                android:text="An important act of worship and pillar of Islam is Zakat. It is required for all Muslims who have more
+money than they need to give a payment to the poor and needy"
+                                android:textColor="@color/colorBlue"
+                                android:visibility="gone"
+                                />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_thinking"
+                            android:layout_margin="5dp"
+                            android:animateLayoutChanges="true">
+
+                            <TextView
+                                android:id="@+id/question_title3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorTabBar"
+                                android:drawableRight="@drawable/drop_down_btn"
+                                android:padding="5dp"
+                                android:text="Sawm:"
+                                android:textColor="@color/colorPurple"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/answer_title3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/question_title3"
+                                android:text="The fourth pillar of Islam is sawm, also known as fasting."
+                                android:textColor="@color/colorBlue"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_thinking"
+                            android:layout_margin="5dp"
+                            android:animateLayoutChanges="true">
+
+                            <TextView
+                                android:id="@+id/question_title4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorTabBar"
+                                android:drawableRight="@drawable/drop_down_btn"
+                                android:padding="5dp"
+                                android:text="Hajj:"
+                                android:textColor="@color/colorPurple"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/answer_title4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/question_title4"
+                                android:text="Hajj is the pilgrimage to Makkah. This is when Muslims visit the Ka’bah, also known
+as the house of Allah."
+                                android:textColor="@color/colorBlue"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/back_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="20dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/back_button" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:text="The Quran"
+                            android:textColor="@color/colorBlue"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/next_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:gravity="center_vertical"
+                            android:text="Allah"
+                            android:textColor="@color/colorAppRed"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/next_button" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>

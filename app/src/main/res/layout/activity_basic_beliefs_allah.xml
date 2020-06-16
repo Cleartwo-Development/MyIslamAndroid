@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ativities.BasicBeliefsAllahActivity">
+
+    <RelativeLayout
+        android:id="@+id/tab_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/purpal_header_bg"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/home_title_bg"
+            android:paddingTop="24dp">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:src="@drawable/ic_arrow_back_button"
+                android:tint="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/title_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_bar_view">
+
+        <ImageView
+            android:id="@+id/img_thinking"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/basic_beliefs_bg" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/img_thinking">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Basic Beliefs"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_corner_grey"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/round_corner_blue"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="ALLAH"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_thinking"
+                            android:layout_margin="5dp"
+                            android:animateLayoutChanges="true">
+
+                            <TextView
+                                android:id="@+id/question_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorTabBar"
+                                android:drawableRight="@drawable/drop_down_btn"
+                                android:padding="5dp"
+                                android:text="Who is Allah?"
+                                android:textColor="@color/colorPurple"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/answer_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/question_title"
+                                android:text="Allah is the Arabic word for God. He is very kind and forgiving. He created everything and knows everything."
+                                android:textColor="@color/colorBlue"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_thinking"
+                            android:layout_margin="5dp"
+                            android:animateLayoutChanges="true">
+
+                            <TextView
+                                android:id="@+id/question_title1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorTabBar"
+                                android:drawableRight="@drawable/drop_down_btn"
+                                android:padding="5dp"
+                                android:text="Why did Allah make humans?"
+                                android:textColor="@color/colorPurple"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/answer_title1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/question_title1"
+                                android:text="Allah made people to worship Him. Muslims can do this in many ways, such as: praying, fasting and helping the needy."
+                                android:textColor="@color/colorBlue"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_thinking"
+                            android:layout_margin="5dp"
+                            android:animateLayoutChanges="true">
+
+                            <TextView
+                                android:id="@+id/question_title2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorTabBar"
+                                android:drawableRight="@drawable/drop_down_btn"
+                                android:padding="5dp"
+                                android:text="Where is Allah?"
+                                android:textColor="@color/colorPurple"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/answer_title2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/question_title2"
+                                android:text="He is everywhere. People cannot see Him \n but He can see everything"
+                                android:textColor="@color/colorBlue"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_thinking"
+                            android:layout_margin="5dp"
+                            android:animateLayoutChanges="true">
+
+                            <TextView
+                                android:id="@+id/question_title3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorTabBar"
+                                android:drawableRight="@drawable/drop_down_btn"
+                                android:padding="5dp"
+                                android:text="What does Allah look like?"
+                                android:textColor="@color/colorPurple"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/answer_title3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/question_title3"
+                                android:text="No, Allah is not like anything that He created.\n He has no body, face or hands, he is unique and there is nothing like Him."
+                                android:textColor="@color/colorBlue"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_thinking"
+                            android:layout_margin="5dp"
+                            android:animateLayoutChanges="true">
+
+                            <TextView
+                                android:id="@+id/question_title4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorTabBar"
+                                android:drawableRight="@drawable/drop_down_btn"
+                                android:padding="5dp"
+                                android:text="Who made Allah?"
+                                android:textColor="@color/colorPurple"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/answer_title4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/question_title4"
+                                android:text="Allah was not created. He has no beginning or end as He has always existed"
+                                android:textColor="@color/colorBlue"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_thinking"
+                            android:layout_margin="5dp"
+                            android:animateLayoutChanges="true">
+
+                            <TextView
+                                android:id="@+id/question_title5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorTabBar"
+                                android:drawableRight="@drawable/drop_down_btn"
+                                android:padding="5dp"
+                                android:text="Does Allah have a mother or father?"
+                                android:textColor="@color/colorPurple"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/answer_title5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/question_title5"
+                                android:text="No, he is One. Allah has no parent nor child and He is the only creator of the heavens and the earth."
+                                android:textColor="@color/colorBlue"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/angels_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/edit_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:text="Angels"
+                        android:textColor="@color/colorAppRed"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/next_screen"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/next_button" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

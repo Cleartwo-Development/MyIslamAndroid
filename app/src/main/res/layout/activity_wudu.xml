@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ativities.WuduActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/tab_bar_view"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:visibility="gone"
+            android:background="@drawable/purpal_header_bg"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/home_title_bg"
+                android:paddingTop="24dp">
+
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="14dp"
+                    android:paddingRight="14dp"
+                    android:src="@drawable/ic_arrow_back_button"
+                    android:tint="@color/colorWhite" />
+
+                <TextView
+                    android:id="@+id/activity_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Hello user"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/fab_margin_top"
+            android:layout_marginRight="@dimen/fab_margin_right"
+            app:backgroundTint="@android:color/transparent"
+            app:fabCustomSize="55dp"
+            app:maxImageSize="55dp"
+            app:srcCompat="@drawable/boy_logo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab_bar_view"
+            android:animateLayoutChanges="true">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_title">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/wudu_image" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Wudu"
+                        android:textColor="@color/colorPurple"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:padding="5dp"
+                        android:text="All Muslims must wash themselves before prayer so that they are in a clean state.
+ In order to do this, Muslims make wudu - a process for cleansing parts of the body."
+                        android:textColor="@color/colorBlack" />
+
+                    <RelativeLayout
+                        android:id="@+id/parent_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="25dp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/wudu_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:background="@drawable/round_corner_purple"
+                            android:scaleType="fitCenter" />
+
+                        <LinearLayout
+                            android:id="@+id/view_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="25dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/title"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="Performing Wudu"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/next_screen_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_weight="3"
+                                android:src="@drawable/next_button" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:text="The Process"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/starting_supplication" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/washing_hands" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/washing_mouth_nose" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cleaning_nose" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/washing_face" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/washing_arms" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/washing_head_ears" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/washing_feets" />
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/transparentBlue"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/rotate_screen" />
+    </RelativeLayout>
+
+</RelativeLayout>

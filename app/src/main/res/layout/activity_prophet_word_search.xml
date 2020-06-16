@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ativities.WuduActivity">
+
+    <RelativeLayout
+        android:id="@+id/tab_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/purpal_header_bg"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/home_title_bg"
+            android:paddingTop="24dp">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:src="@drawable/ic_arrow_back_button"
+                android:tint="@color/colorWhite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Prophet Word Search"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/tryAgain"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/restore_bg"
+                android:textAllCaps="false"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/simpleGridView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomView"
+        android:layout_below="@id/tab_bar_view"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_corner_purple"
+        android:footerDividersEnabled="false"
+        android:numColumns="15" />
+
+    <LinearLayout
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ADAM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="ADAM"
+                    android:gravity="center"
+                    android:textAllCaps="false"/>
+                <TextView
+                    android:id="@+id/ISA"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="ISA"
+                    android:gravity="center"
+                    android:textAllCaps="false"/>
+                <TextView
+                    android:id="@+id/MUSA"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="MUSA"
+                    android:gravity="center"
+                    android:textAllCaps="false"/>
+                <TextView
+                    android:id="@+id/YAHYA"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="YAHYA"
+                    android:gravity="center"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/IBRAHIM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="IBRAHIM"
+                    android:gravity="center"
+                    android:textAllCaps="false"/>
+                <TextView
+                    android:id="@+id/ISMAIL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="ISMAIL"
+                    android:gravity="center"
+                    android:textAllCaps="false"/>
+                <TextView
+                    android:id="@+id/NUH"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="NUH"
+                    android:gravity="center"
+                    android:textAllCaps="false"/>
+                <TextView
+                    android:id="@+id/YAQUB"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="YAQUB"
+                    android:gravity="center"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/IDREES"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="IDREES"
+                    android:gravity="center"
+                    android:textAllCaps="false"/>
+                <TextView
+                    android:id="@+id/MUHAMMAD"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="MUHAMMAD"
+                    android:gravity="center"
+                    android:textAllCaps="false"/>
+                <TextView
+                    android:id="@+id/SULEIMAN"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="SULEIMAN"
+                    android:gravity="center"
+                    android:textAllCaps="false"/>
+                <TextView
+                    android:id="@+id/YUSUF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="YUSUF"
+                    android:gravity="center"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

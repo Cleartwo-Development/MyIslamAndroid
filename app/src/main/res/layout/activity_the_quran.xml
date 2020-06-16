@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ativities.TheQuranActivity">
+    <RelativeLayout
+        android:id="@+id/tab_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/purpal_header_bg"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/home_title_bg"
+            android:paddingTop="24dp">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:src="@drawable/ic_arrow_back_button"
+                android:tint="@color/colorWhite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_bar_view">
+
+        <ImageView
+            android:id="@+id/img_thinking"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/basic_beliefs_bg" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/img_thinking">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Basic Beliefs"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_corner_grey"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/round_corner_blue"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="The Quran"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="The Quran is the holy book of Islam. It is the word of Allah
+and was revealed by Allah to Prophet Muhammad (PBUH)
+through Angel Jibra’il (Gabriel).\n\nJibra’il revealed Allah’s words to Muhammad (PBUH)
+piece by piece over a period of 23 years. The first time
+Jibra’il visited Prophet Muhammad was in the year 610
+A.D. when the Prophet was 40 years old. On this night
+during the month of Ramadhan, parts of Surah al-Alaq,
+the 96th chapter of the Quran, were revealed.\n\nThe Quran is divided into chapters or surahs and there is a
+total of 114 chapters in the holy book. These sections are
+then further divided into verses.\n\nIt was originally written in Arabic and memorised by many
+companions of the Prophet Muhammed (PBUH). Since
+the Prophet’s time, Muslims around the world have
+continued to memorise the Quran and it has not
+changed over the last 1400 years
+"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="Why do Muslims read the Quran?"
+                        android:textColor="@color/colorBlue"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="The Quran tells us how we should behave and act
+towards our parents, siblings, teachers and neighbours.
+It teaches us what is right and wrong, and therefore acts
+as a book of guidance. Muslims are expected to read the
+Quran and follow what it says, as it is the direct word
+of Allah.
+"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/back_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingBottom="20dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/back_button" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Messengers"
+                            android:textColor="@color/colorBlue"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/next_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingBottom="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:text="Day of Judgement &amp; Life After Death"
+                            android:textColor="@color/colorAppRed"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/next_button" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

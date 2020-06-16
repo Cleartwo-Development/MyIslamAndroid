@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/sawm_bg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Sawm (fasting)"
+                android:textColor="@color/colorPurple"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner_grey"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="The fourth pillar of Islam is sawm, also known as fasting. This is
+when Muslims fast during the month of Ramadhan every year.\n\n
+Fasting means not eating or drinking from dawn to sunset. Not
+only do Muslims avoid food, they are also expected to stay away
+from using bad language, lying and other bad things.\n\n
+Following Isha (the night prayer), Muslims pray Tarawih.
+This is an additional prayer that is performed during Ramadhan
+and is a prayer that the Prophet Muhammad (PBUH)
+made during the holy month.\n\n
+Muslims eat a meal before dawn called Sahoor and then a
+meal after sunset to break the fast. This is called Iftar and often,
+Muslims enjoy this meal with family or friends. Arrangements
+can also be made in the mosque so locals can gather
+and break their fasts together.
+"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/question_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/colorTabBar"
+                    android:drawableRight="@drawable/drop_down_btn"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="But why do Muslims fast during Ramadhan?"
+                    android:textColor="@color/colorPurple"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/answer_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="Fasting is an act of worship and a way to get closer to God. It is a way to remind
+Muslims of the poor who go
+days without food or drink and make them feel empathy
+for those who are unable to eat and drink as they please. It is also intended to stop
+Muslims from doing or saying bad things as Ramadhan is a special month full of
+great blessings.\n\n
+To mark the end of
+Ramadhan, Muslims celebrate Eid al
+-
+Fitr. This is a day that starts
+with a special Eid prayer in the morning which should be performed in congregation
+with other Muslims. Eid is a happy occasion and Muslims often wear nice clothes
+and spend time with loved
+ones.
+"
+                    android:textColor="@color/colorBlue"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

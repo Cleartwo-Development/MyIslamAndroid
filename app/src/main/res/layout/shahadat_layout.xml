@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_bar_view">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_thinking"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/shahadah_bg" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Shahadah"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="The first pillar of Islam is Shahadah. Shahadah is to believe
+that there is no God except Allah and that Muhammad
+(PBUH) is his messenger. A person becomes a Muslim by
+reciting and believing in this statement:
+T"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="لَآ اِلٰهَ اِلَّااللهُ مُحَمَّدٌ رَّسُولُ اللہ"
+                    android:textColor="@color/colorBlack"
+                    android:drawableRight="@drawable/audio_play"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="There is no god but God, and
+Muhammad is the messenger of Allah"
+                    android:textColor="@color/colorPurple"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="This is also known as Kalima Tayyibah (Word of Purity).
+It is the first of the six well-known kalimas."
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/round_corner_grey"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/round_corner_blue"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:text="The Six Kalimas"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_thinking"
+                            android:layout_margin="5dp"
+                            android:animateLayoutChanges="true">
+
+                            <TextView
+                                android:id="@+id/question_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorTabBar"
+                                android:drawableRight="@drawable/drop_down_btn"
+                                android:padding="10dp"
+                                android:text="First Kalima (Tayyibah):"
+                                android:textColor="@color/colorPurple"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/answer_title"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                android:layout_below="@+id/question_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="لَآ اِلٰهَ اِلَّااللهُ مُحَمَّدٌ رَّسُولُ اللہ"
+                                    android:textColor="@color/colorBlack"
+                                    android:drawableRight="@drawable/audio_play"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="La ilaha ill Allah Muhammadur-Rasul Allah"
+                                    android:textColor="@color/colorBlack"
+                                    />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="This is also known as Kalima Tayyibah (Word of Purity).
+It is the first of the six well-known kalimas."
+                                    android:textColor="@color/colorPurple"
+                                    />
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_thinking"
+                            android:layout_margin="5dp"
+                            android:animateLayoutChanges="true">
+
+                            <TextView
+                                android:id="@+id/question_title1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorTabBar"
+                                android:drawableRight="@drawable/drop_down_btn"
+                                android:padding="10dp"
+                                android:text="Second Kalima (Shahadat)"
+                                android:textColor="@color/colorPurple"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/answer_title1"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                android:layout_below="@+id/question_title1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="اَشْهَدُ اَنْ لَّآ اِلٰهَ اِلَّا اللهُ وَاَشْهَدُ اَنَّ مُحَمَّدًا عَبْدُهٗ وَرَسُولُہِٗ"
+                                    android:textColor="@color/colorBlack"
+                                    android:drawableRight="@drawable/audio_play"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="Ash-hadu an
+-La illaha ill Allahu, Wahdahu La Sharika lah, wa ash
+-Hadu anna Muhammadan 'abduhu
+wa Rasoolu"
+                                    android:textColor="@color/colorBlack"
+                                    />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="I bear witness that no one is worthy of worship but Allah, the
+One alone, without partner, and I bear
+witness that Muhammad is His servant and Messenger"
+                                    android:textColor="@color/colorPurple"
+                                    />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_thinking"
+                            android:layout_margin="5dp"
+                            android:animateLayoutChanges="true">
+
+                            <TextView
+                                android:id="@+id/question_title2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorTabBar"
+                                android:drawableRight="@drawable/drop_down_btn"
+                                android:padding="10dp"
+                                android:text="Third Kalima (Tamjeed)"
+                                android:textColor="@color/colorPurple"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/answer_title2"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                android:layout_below="@+id/question_title2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="سُبْحَان اللهِ وَالْحَمْدُلِلّهِ وَلا إِلهَ إِلّااللّهُ وَاللّهُ أكْبَرُ وَلا حَوْلَ وَلاَ قُوَّةَ إِلَّا بِاللّهِ الْعَلِيِّ الْعَظِيْم"
+                                    android:textColor="@color/colorBlack"
+                                    android:drawableRight="@drawable/audio_play"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="Subhan Allahu, wal Hamdu lillahi, wa la illaha ilAllahu, wallahu Akbar. wa La hawla wa la quwwata illa
+billah-al 'alii-al 'adheem
+"
+                                    android:textColor="@color/colorBlack"
+                                    />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="Glory be to Allah and praise to Allah, and there is no God but Allah, and Allah is the greatest. And
+there is no might or power except with Allah."
+                                    android:textColor="@color/colorPurple"
+                                    />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_thinking"
+                            android:layout_margin="5dp"
+                            android:animateLayoutChanges="true">
+
+                            <TextView
+                                android:id="@+id/question_title3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorTabBar"
+                                android:drawableRight="@drawable/drop_down_btn"
+                                android:padding="10dp"
+                                android:text="Fourth Kalima (Tawheed)"
+                                android:textColor="@color/colorPurple"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/answer_title3"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                android:layout_below="@+id/question_title3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="لَآ اِلٰهَ اِلَّا اللهُ وَحْدَهٗ لَا شَرِيْكَ لَهٗ لَهُ الْمُلْكُ وَ لَهُ الْحَمْدُ يُحْىٖ وَ يُمِيْتُ وَ هُوَحَیٌّ لَّا يَمُوْتُ اَبَدًا اَبَدًاؕ ذُو الْجَلَالِ وَالْاِكْرَامِؕ بِيَدِهِ الْخَيْرُؕ وَهُوَ عَلٰى كُلِّ شیْ ٍٔ قَدِیْرٌِؕ"
+                                    android:textColor="@color/colorBlack"
+                                    android:drawableRight="@drawable/audio_play"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="La ilaha illAllahu Wahdahu La Shareeka lahu, lahulmulk, wa lahulhamd, yuhyee wa yumeet, wa huwa
+hayy la yumoot abadan abada Dhul Jalaali waal Ikram beyadihi alkhayr, wa huwa 'ala kulli Shay'in
+Qadeer"
+                                    android:textColor="@color/colorBlack"
+                                    />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="There is none worthy
+of worship except Allah. He is alone and has no partner.
+To Him belongs the kingdom and for Him is all the
+praise. He gives life and causes death. And He is
+a live. He will not die, never, ever. Possessor of
+majesty and reverence. In His hand is all good and He has power over
+everything."
+                                    android:textColor="@color/colorPurple"
+                                    />
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_thinking"
+                            android:layout_margin="5dp"
+                            android:animateLayoutChanges="true">
+
+                            <TextView
+                                android:id="@+id/question_title4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorTabBar"
+                                android:drawableRight="@drawable/drop_down_btn"
+                                android:padding="10dp"
+                                android:text="Fifth Kalima (Istighfar)"
+                                android:textColor="@color/colorPurple"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/answer_title4"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                android:layout_below="@+id/question_title4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="اَسْتَغْفِرُ اللهِ رَبِّىْ مِنْ كُلِِّ ذَنْۢبٍ اَذْنَبْتُهٗ عَمَدًا اَوْ خَطَا ًٔ سِرًّا اَوْ عَلَانِيَةً وَّاَتُوْبُ اِلَيْهِ مِنَ الذَّنْۢبِ الَّذِیْٓ اَعْلَمُ
+وَ مِنَ الذَّنْۢبِ الَّذِىْ لَآ اَعْلَمُ اِنَّكَ اَنْتَ عَلَّامُ الْغُيُوْبِ وَ سَتَّارُ الْعُيُوْبِ و َغَفَّارُ الذُّنُوْبِ وَ لَا حَوْلَ وَلَا قُوَّةَ اِلَّا بِاللهِ الْعَلِىِِّ الْعَظِيْمِِؕ"
+                                    android:textColor="@color/colorBlack"
+                                    android:drawableRight="@drawable/audio_play"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="Astaghfirullaha Rabbi min kulli dhanbin adhnabtahu amadan aw khata'an, sirran aw alaniyatan, wa
+atubuhu ilayhi min adh
+-dhanb illadhi a'lamu, wa min adh
+-dhanb illadhi la a'lamu, innaka anta allamal
+ghuyub, wa sattar ul'uyoubi, wa ghaffarudh dhunub, wa la hawla wa la quwwatta illa billahil 'aliy
+-al'adheem"
+                                    android:textColor="@color/colorBlack"
+                                    />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="
+I seek forgiveness from Allah, my Lord, from every sin I committed knowingly or unknowingly,
+secretly or openly, and I turn towards Him from the sin that I know and from the sin that I do not
+know. Certainly You, You (are) the knower of the hidden things and the concealer (of) the mistakes
+and the forgiver (of) the sins. And (there is) no power and no strength except from Allah, the most
+high, the most great."
+                                    android:textColor="@color/colorPurple"
+                                    />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_thinking"
+                            android:layout_margin="5dp"
+                            android:animateLayoutChanges="true">
+
+                            <TextView
+                                android:id="@+id/question_title5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/colorTabBar"
+                                android:drawableRight="@drawable/drop_down_btn"
+                                android:padding="10dp"
+                                android:text="Sixth Kalima (Radd-e-Kuffar):"
+                                android:textColor="@color/colorPurple"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/answer_title5"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                android:layout_below="@+id/question_title5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="اَللّٰهُمَّ اِنِّیْٓ اَعُوْذُ بِكَ مِنْ اَنْ اُشْرِكَ بِكَ شَيْئًا وَّاَنَآ اَعْلَمُ بِهٖ وَ اَسْتَغْفِرُكَ لِمَا لَآ اَعْلَمُ بِهٖ تُبْتُ عَنْهُ
+  وَ تَبَرَّأْتُ مِنَ الْكُفْرِ وَ الشِّرْكِ وَ الْكِذْبِ وَ الْغِيْبَةِ وَ الْبِدْعَةِ وَ النَّمِيْمَةِ وَ الْفَوَاحِشِ وَ الْبُهْتَانِ وَ الْمَعَاصِىْ كُلِِّهَا وَ اَسْلَمْتُ وَ اَقُوْلُ لَآ اِلٰهَ اِلَّا اللهُ مُحَمَّدٌ رَّسُوْلُ اللهِِؕ"
+                                    android:textColor="@color/colorBlack"
+                                    android:drawableRight="@drawable/audio_play"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="Allahumma innii a'udhu bika min an ushrika bika shai
+-anw-wa ana a'lamu bihii. Was tagh fi ru ka
+limaa laa alamu bihee. Tubtu anhu wa tabarra-tu min al-kufri wash-shirki wal-
+kizdhbi wal-ghiibati wal-bid’atiُwan-
+namiimati wal fawaahishi wal-
+buhtani w-al-ma’aasii kulliha. Wa aslamtu wa aquulu
+La illaha illAllahu Muhammadur RasulAllah"
+                                    android:textColor="@color/colorBlack"
+                                    />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="O Allah! I seek refuge in You from that I should
+assign any partner with You knowingly. I seek Your
+forgiveness for the sin of which I have no knowledge. I repent from it.
+I reject disbelief and joining
+partners with You and of falsehood and slandering and innovation in religion
+and all other acts of
+disobedience, I submit to Your will. I believe and I declare that there is none worthy of worship except
+Allah and Muhammad is the Messenger of Allah.
+"
+                                    android:textColor="@color/colorPurple"
+                                    />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</RelativeLayout>
