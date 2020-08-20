@@ -9,10 +9,12 @@ import android.widget.ImageView;
 
 import com.cleartwo.admin.myislam.R;
 import com.cleartwo.admin.myislam.utilities.Const;
+import com.cleartwo.admin.myislam.utilities.DataProcessor;
 
 public class ChildNameActivity extends AppCompatActivity {
 
     EditText edit_text;
+    DataProcessor dataProcessor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,14 +22,8 @@ public class ChildNameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_chiled_name);
 
         edit_text = findViewById(R.id.edit_text);
+        dataProcessor = new DataProcessor(this);
 
-        ((View) findViewById(R.id.back_button)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-                overridePendingTransition(R.anim.left_to_right_ani, R.anim.right_to_left_ani);
-            }
-        });
 
         ((ImageView) findViewById(R.id.next_screen)).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +33,7 @@ public class ChildNameActivity extends AppCompatActivity {
                     edit_text.setError("First Name Please");
                 else {
                     Const.profileName = strName;
+                    dataProcessor.setStr("name", strName);
                     nextToSignUp(ChildAvatarActivity.class);
                 }
             }

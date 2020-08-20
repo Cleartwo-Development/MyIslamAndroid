@@ -1,29 +1,28 @@
-package com.cleartwo.admin.myislam.ativities;
+package com.cleartwo.admin.myislam.ativities.StartSignUp;
 
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.WindowManager;
 import android.widget.ImageView;
-import android.widget.MediaController;
 import android.widget.VideoView;
 
 import com.cleartwo.admin.myislam.R;
-import com.cleartwo.admin.myislam.ativities.StartSignUp.ChildNameActivity;
-import com.cleartwo.admin.myislam.ativities.StartSignUp.StartSignUpActivity;
+import com.cleartwo.admin.myislam.ativities.MainActivity;
+import com.cleartwo.admin.myislam.utilities.DataProcessor;
 import com.skyfishjy.library.RippleBackground;
 
 public class SplashActivity extends AppCompatActivity {
 
     private VideoView videoView;
-
+    DataProcessor dataProcessor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        dataProcessor = new DataProcessor(this);
         videoView = findViewById(R.id.videoView);
 
         final RippleBackground rippleBackground = (RippleBackground) findViewById(R.id.content);
@@ -35,9 +34,15 @@ public class SplashActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashActivity.this, ChildNameActivity.class));
-                overridePendingTransition(R.anim.enter_ani, R.anim.exit_ani);
-                finish();
+                if(dataProcessor.getStr("name").equals("DNF")) {
+                    startActivity(new Intent(SplashActivity.this, ChildNameActivity.class));
+                    overridePendingTransition(R.anim.enter_ani, R.anim.exit_ani);
+                    finish();
+                }else {
+                    startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                    overridePendingTransition(R.anim.enter_ani, R.anim.exit_ani);
+                    finish();
+                }
             }
         }, 4000);
 

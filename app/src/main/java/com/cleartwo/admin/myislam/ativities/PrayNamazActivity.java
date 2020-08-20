@@ -55,6 +55,7 @@ public class PrayNamazActivity extends AppCompatActivity {
         } else if (count > 11) {
             count = 1;
         }
+
         part_number.setText("" + count);
         if (count == 1) {
             pray_image.setImageDrawable(getResources().getDrawable(R.drawable.niyyah));
@@ -80,6 +81,9 @@ public class PrayNamazActivity extends AppCompatActivity {
                     "\nاهدِنَــــا الصِّرَاطَ المُستَقِيمَ" +
                     "\nصِرَاطَ الَّذِينَ أَنعَمتَ عَلَيهِمْ" +
                     "\nغَيرِ المَغضُوبِ عَلَيهِمْ وَلاَ الضَّالِّينَ" +
+                    "\n\nAl hamdu lil lahi rabbil 'alamin. Arrahmanir rahim. Maliki yawmiddin. Iyyaka na'budu wa\n" +
+                    "iyyaka nasta'in. Ihdinas siratal mustaqim. Siratal ladhina an'amta'alaihim, ghairil\n" +
+                    "maghdubi'alaihim wa lad dhallin. (Amin)"+
                     "\n\nIn The Name of Allah, The Beneficent, The Merciful.\n" +
                     "(All) praise is (only) Allah's, the Lord\n" +
                     "of the Worlds.\n" +
@@ -98,18 +102,21 @@ public class PrayNamazActivity extends AppCompatActivity {
             pray_part_details.setText("Bow down and recite:\n" +
                     "\nسُبْحَانَ رَبِّىَ الْعَظِيْمِ" +
                     "(three times)" +
+                    "\n\nsubḥāna rabbiya l-ʿaẓīm,"+
                     "\n\nGlory be to my Lord, the Almighty.");
         } else if (count == 5) {
             pray_image.setImageDrawable(getResources().getDrawable(R.drawable.niyyah));
             pray_part_title.setText("Qiyaam");
             pray_part_details.setText("Return to an upright position and recite:\n" +
                     "\nسَمِعَ اللَّهُ لِمَنْ حَمِدَه رَبَّنَـا لَكَ الْحَمْدُ" +
+                    "\n\nsamiʿa-llāhu limanḥamidahRabbana lakal hamd"+
                     "\n\nGlory be to my Lord, the Almighty.");
         } else if (count == 6) {
             pray_image.setImageDrawable(getResources().getDrawable(R.drawable.pray_sujud));
             pray_part_title.setText("Sujud");
             pray_part_details.setText("While prostrating, recite:" +
                     "\n\nسُبْحَانَ رَبِّىَ الأَ عْلَى(three times)" +
+                    "\n\nsubḥāna rabbiya l-ʾaʿlā"+
                     "\n\nGlory be to my Lord, the Most High.\n" +
                     "Repeat the act of sujud.");
         } else if (count == 7) {
@@ -134,6 +141,11 @@ public class PrayNamazActivity extends AppCompatActivity {
                     "\nاَلتَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِبَاتُ اَلسَّلاَمُ عَلَيْكَ اَيُّهَاالنَّبِيُّ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ" +
                     "اَلسَّلاَمُ عَلَيْنَا وَ عَلَى عِبَادِ اللهِ الصَّالِحِيْنَ\n" +
                     "اَشْهَدُ اَنْ لاَّ اِلَهَ اِلاَّ اللَّهُ وَاَشْهَدُ اَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُوْلُهُ\n" +
+                    "\n\nAthahiyyaatuLillahi Was Salawaatu Wattayyibatu\n" +
+                    "Assalamu Alaika Ayyuhannabi ‘yu ‘Warahmatullaahi Wabarka’tuhu\n" +
+                    "Assalamu Alaina Wa’alaa’Ibaadillaahis Saa’liheen,\n" +
+                    "Ash’had’u’Allahaa ilaha illallahu\n" +
+                    "Wa Ash’hadu Anna Muhammadun Abd’uhu Wa Rasooluh"+
                     "\n\nAll compliments, prayers and beautiful expressions are for God. Peace be on you, Oh\n" +
                     "Messenger, and God's mercy and blessings. Peace be on us and on all righteous servants\n" +
                     "of God. I bear witness that no one is worthy of worship except God. And I bear witness\n" +
@@ -142,6 +154,12 @@ public class PrayNamazActivity extends AppCompatActivity {
                     "\n\n\n" +
                     "اَللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَّعَلَى آلِ مُحَمَّدٍ كَمَـا صَلَّيْتَ عَلَى اِبْرَاهِيْمَ وَعَلَى آلِ اِبْرَاهِيْمَ اِنَّكَ حَمِيْدٌ مَّجِيْدٌ\n" +
                     "اَللَّهُمَّ بَـارِكْ عَلَى مُحَمَّدٍ وَّعَلَى آلِ مُحَمَّدٍ كَمَـا بَـاَرَكْتَ عَلَى اِبْرَاهِيْمَ وَعَلَى آلِ اِبْرَاهِيْمَ اِنَّكَ حَمِيْدٌ مَّجِيْدٌ\n" +
+                    "\n\nAllaahumma Salleh Alaa Muhammadin Wa’alaa’ Aale Muhammadin\n" +
+                    "Kama Sallaiyta Alaa Ibraheema Wa’ Alaa Aale Ibraheema\n" +
+                    "Innaka Hameedum Majeed\n" +
+                    "Allaahumma Baarak Alaa Muhammadin Wa’ Alaa Aale Muhammadin\n" +
+                    "Kama Baarakta Alaa Ibraheem Wa’ Alaa Aale Ibraheema\n" +
+                    "Innaka Hameedum Majeed\n" +
                     "\n\n" +
                     "My God, honour Muhammad and Muhammad’s family as you honoured Abraham and\n" +
                     "Abraham’s family Surely, you are praiseworthy, the Great My God, bless Muhammad and\n" +
@@ -152,12 +170,14 @@ public class PrayNamazActivity extends AppCompatActivity {
             pray_part_title.setText("Salaam");
             pray_part_details.setText("Turn to your right and recite:" +
                     "\n\nاَلسَّلاَمُ عَلَيكُمْ وَرَحْمَةُ اللهِ" +
+                    "\n\nAssalamu alaikum wa rahmatullah"+
                     "\n\nGod's peace and blessings be upon you.");
         } else if (count == 11) {
             pray_image.setImageDrawable(getResources().getDrawable(R.drawable.salam_left));
             pray_part_title.setText("Salaam");
             pray_part_details.setText("Turn to your left and recite:" +
                     "\n\nاَلسَّلاَمُ عَلَيكُمْ وَرَحْمَةُ اللهِ" +
+                    "\n\nAssalamu alaikum wa rahmatullah"+
                     "\n\nGod's peace and blessings be upon you." +
                     "\nNow you have completed two rak’aahs of salat.\n");
         }

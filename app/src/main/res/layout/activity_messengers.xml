@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ativities.MessengersActivity">
+
     <RelativeLayout
         android:id="@+id/tab_bar_view"
         android:layout_width="match_parent"
@@ -45,23 +46,22 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/tab_bar_view">
 
-        <ImageView
-            android:id="@+id/img_thinking"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/basic_beliefs_bg" />
-
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/img_thinking">
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="10dp"
                 android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_thinking"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/basic_beliefs_bg" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
@@ -75,6 +75,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="10dp"
                     android:background="@drawable/round_corner_grey"
                     android:orientation="vertical">
 
@@ -88,21 +89,24 @@
                         android:textColor="@color/colorWhite"
                         android:textSize="18sp"
                         android:textStyle="bold" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="10dp">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="“Allah raised prophets as bearers of good news
 and as warners...''"
-                            android:textColor="@color/colorPurple"/>
+                            android:textColor="@color/colorPurple" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="(The Holy Quran 2:213)"/>
+                            android:text="(The Holy Quran 2:213)" />
                     </LinearLayout>
 
 
@@ -115,22 +119,23 @@ and as warners...''"
 carrying out good deeds. But how did Allah deliver this
 message to us? He chose prophets and messengers to
 communicate with mankind and show us how to
-worship and obey Allah
+worship and obey Allah.
 "
-                        android:textStyle="bold" />
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Prophet = Nabi"
-                        android:padding="10dp"
-                        android:textColor="@color/colorPurple"/>
+                        android:textColor="@color/colorBlack" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Messenger = Rasul"
                         android:padding="10dp"
-                        android:textColor="@color/colorPurple"/>
+                        android:text="Prophet = Nabi"
+                        android:textColor="@color/colorPurple" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Messenger = Rasul"
+                        android:textColor="@color/colorPurple" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -141,13 +146,12 @@ worship and obey Allah
 were given a book by Allah to then convey to the
 people of their time. These books were sent from Allah
 to the messengers through Angel Jibra’il (Gabriel).
-Who were these prophets?\n\nThe very first was Prophet Adam (AS). He was the first
-man on Earth, along with his wife Hawwa. After
-Prophet Adam (AS), there were many other prophets
+\n\nWho were these prophets?\n\nThe very first was Prophet Adam (AS). He was the first
+man on Earth, along with his wife Hawwa.\nAfter Prophet Adam (AS), there were many other prophets
 and messengers until the final prophet of Allah and
 Angel Jibra’il (Gabriel) revealed God’s complete and
 final message to him, known as the Quran."
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorBlack" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -156,8 +160,7 @@ final message to him, known as the Quran."
                         android:padding="10dp"
                         android:text="Throughout history, there have been many prophets
 but only 25 are mentioned in the Quran:"
-                        android:textColor="@color/colorBlue"
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorBlue" />
 
 
                     <LinearLayout
@@ -166,320 +169,329 @@ but only 25 are mentioned in the Quran:"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Adam (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Musa (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Idrees (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Harun (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Nuh (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Zu-Al-Kifal (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Hud (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Dawud (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Saleh (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Suleiman (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        >
+                        android:paddingRight="10dp">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Ibrahim (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Ilyas (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Lut (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Al-Yasa (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Ismail (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Yunus (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Ishaq (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Zakaria (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Yaqub (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Hazrat Yahya (AS)"
                             android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
                             android:drawablePadding="5dp"
-                            />
+                            android:text="Hazrat Yahya (AS)"
+                            android:textColor="@color/colorPurple" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Yusuf (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Isa (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
-                        android:paddingBottom="5dp"
-                        >
+                        android:paddingBottom="5dp">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
+                            android:drawableLeft="@drawable/right_errow"
+                            android:drawablePadding="5dp"
                             android:text="Hazrat Ayyub (AS)"
-                            android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
-                            android:drawablePadding="5dp"
-                            />
+                            android:textColor="@color/colorPurple" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Hazrat Muhammad (PBUH)"
                             android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
                             android:drawablePadding="5dp"
-                            />
+                            android:text="Hazrat Muhammad (PBUH)"
+                            android:textColor="@color/colorPurple" />
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
-                        android:paddingBottom="5dp"
-                        >
+                        android:paddingBottom="5dp">
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Hazrat Shuaib (AS)"
                             android:drawableLeft="@drawable/right_errow"
-                            android:textColor="@color/colorPurple"
                             android:drawablePadding="5dp"
-                            />
+                            android:text="Hazrat Shuaib (AS)"
+                            android:textColor="@color/colorPurple" />
 
                     </LinearLayout>
                 </LinearLayout>
@@ -501,6 +513,7 @@ but only 25 are mentioned in the Quran:"
                             android:layout_width="60dp"
                             android:layout_height="50dp"
                             android:src="@drawable/back_button" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
@@ -518,8 +531,8 @@ but only 25 are mentioned in the Quran:"
                         android:id="@+id/next_btn"
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
-                        android:gravity="right"
                         android:layout_gravity="right"
+                        android:gravity="right"
                         android:orientation="horizontal"
                         android:paddingBottom="20dp">
 
@@ -528,14 +541,14 @@ but only 25 are mentioned in the Quran:"
                             android:layout_height="match_parent"
                             android:background="@null"
                             android:gravity="center_vertical"
-                            android:text="The Quran"
+                            android:text="The Quran "
                             android:textColor="@color/colorAppRed"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
                             android:src="@drawable/next_button" />
                     </LinearLayout>
 

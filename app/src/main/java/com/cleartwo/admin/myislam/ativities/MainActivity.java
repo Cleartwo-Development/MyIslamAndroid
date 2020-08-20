@@ -28,6 +28,7 @@ import com.cleartwo.admin.myislam.fragments.GameIconFragment;
 import com.cleartwo.admin.myislam.fragments.HomeFragment;
 import com.cleartwo.admin.myislam.fragments.MenuFragment;
 import com.cleartwo.admin.myislam.utilities.Const;
+import com.cleartwo.admin.myislam.utilities.DataProcessor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity
 
     public TabLayout tabLayout;
     public ViewPager viewPager;
+    DataProcessor dataProcessor;
 
     private int[] tabIcons = {
             R.drawable.home_btn,
@@ -47,10 +49,11 @@ public class MainActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle("Hi " + Const.profileName);
+        dataProcessor = new DataProcessor(this);
+        setTitle("Hi " + dataProcessor.getStr("name"));
         setContentView(R.layout.activity_main);
-
         initView();
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -61,7 +64,7 @@ public class MainActivity extends AppCompatActivity
                         .setAction("Action", null).show();
             }
         });
-        fab.setImageResource(Const.profileIcon);
+        fab.setImageResource(dataProcessor.getInt("avatar"));
         final DrawerLayout drawer = findViewById(R.id.drawer_layout);
         final NavigationView navigationView = findViewById(R.id.nav_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -162,6 +165,7 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             this.tabLayout.getTabAt(0).select();
         } else if (id == R.id.nav_back) {
+            dataProcessor.setClearData();
             startActivity(new Intent(MainActivity.this, ChildNameActivity.class));
             overridePendingTransition(R.anim.left_to_right_ani, R.anim.right_to_left_ani);
             finish();

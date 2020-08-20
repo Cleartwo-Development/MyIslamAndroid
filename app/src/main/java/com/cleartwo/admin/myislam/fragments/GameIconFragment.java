@@ -65,6 +65,7 @@ public class GameIconFragment extends Fragment {
     }
 
     public void initView() {
+        Const.gameIconFragment = this;
 
         CustomAdapter adapter = new CustomAdapter(getActivity(), web, imageId);
         grid = (GridView) view.findViewById(R.id.grid);
@@ -79,9 +80,11 @@ public class GameIconFragment extends Fragment {
                     Const.gridSelectedNumber = position;
                     Const.methodCall();
                     Const.mainActivity.tabLayout.getTabAt(2).select();
+                    Const.homeFragment.section_name.setText(web[position]);
+                    Const.homeFragment.sectionTitle_bg.setImageResource(imageId[position]);
                     Const.menuFragment.initView();
                 }catch (Exception e){
-                    Toast.makeText(getActivity(), "Some thing went wrong :-(" , Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(getActivity(), "Some thing went wrong :-(" , Toast.LENGTH_SHORT).show();
                 }
             }
         });

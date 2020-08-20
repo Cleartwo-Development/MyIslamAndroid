@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.cleartwo.admin.myislam.R;
 import com.cleartwo.admin.myislam.utilities.Const;
+import com.cleartwo.admin.myislam.utilities.DataProcessor;
 
 public class WuduActivity extends AppCompatActivity {
 
@@ -25,12 +26,13 @@ public class WuduActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wudu);
+        DataProcessor dataProcessor = new DataProcessor(this);
 
         tab_bar_view = findViewById(R.id.tab_bar_view);
         tab_bar_view.setVisibility(View.VISIBLE);
         activity_title = findViewById(R.id.activity_title);
         wudu_btn = findViewById(R.id.wudu_btn);
-        activity_title.setText("Hello " + Const.profileName);
+        activity_title.setText("Hello " + dataProcessor.getStr("name"));
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,7 +41,8 @@ public class WuduActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        fab.setImageResource(Const.profileIcon);
+
+        fab.setImageResource(dataProcessor.getInt("avatar"));
 
         wudu_btn.setOnClickListener(new View.OnClickListener() {
             @Override

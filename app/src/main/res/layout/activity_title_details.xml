@@ -74,7 +74,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:text="Allah created everything and knows everything." />
+                android:text="Allah created everything and knows everything."
+                android:textColor="@color/colorBlack"/>
         </ScrollView>
     </RelativeLayout>
 

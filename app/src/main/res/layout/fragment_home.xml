@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -29,8 +30,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
             android:orientation="horizontal">
 
@@ -39,21 +40,21 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="2dp"
-                android:src="@drawable/green_btn" />
+                android:src="@drawable/basic_beliefs" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="2dp"
-                android:src="@drawable/red_btn" />
+                android:src="@drawable/shahadah" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="2dp"
-                android:src="@drawable/dark_orang_btn" />
+                android:src="@drawable/salah" />
         </LinearLayout>
 
         <LinearLayout
@@ -69,21 +70,21 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="2dp"
-                android:src="@drawable/blue_btn" />
+                android:src="@drawable/sawm" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="2dp"
-                android:src="@drawable/light_orang_btn" />
+                android:src="@drawable/zakat" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:padding="2dp"
-                android:src="@drawable/dark_purpal_btn" />
+                android:src="@drawable/hajj" />
         </LinearLayout>
     </LinearLayout>
 
@@ -95,11 +96,17 @@
         android:layout_weight="1">
 
         <ImageView
+            android:id="@+id/sectionTitle_bg"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:foreground="@drawable/corner_transparent"
+            android:scaleType="fitXY"
             android:src="@drawable/section_title_bg" />
 
         <TextView
+            android:id="@+id/section_name"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="25dp"
@@ -109,6 +116,4 @@
             android:textSize="22sp" />
 
     </RelativeLayout>
-
-
 </LinearLayout>

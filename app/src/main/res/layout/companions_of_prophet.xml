@@ -53,13 +53,10 @@
                     android:gravity="center_vertical"
                     android:padding="10dp"
                     android:text="During the Prophet’s (PBUH) life, he made some very
-close friends who stood by him as he spread Allah’s word.\n\n
-These companions, or sahabah in Arabic, spent a lot of
+close friends who stood by him as he spread Allah’s word.\n\nThese companions, or sahabah in Arabic, spent a lot of
 time with Muhammad (PBUH) and learned about Islam
-directly from him.\n\n
-Muslims believe that the sahabah were righteous people
-and lived as Muslims until they died.\n\n
-Following the death of Muhammad (PBUH), four
+directly from him.\n\nMuslims believe that the sahabah were righteous people
+and lived as Muslims until they died.\n\nFollowing the death of Muhammad (PBUH), four
 of his closest companions led the religion."
                     android:textColor="@color/colorBlack" />
                 <LinearLayout
@@ -75,9 +72,7 @@ of his closest companions led the religion."
                         android:padding="5dp"
                         android:text="Abu Bakr"
                         android:background="@color/colorTabBar"
-                        android:textColor="@color/colorPurple"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorPurple" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -87,9 +82,7 @@ of his closest companions led the religion."
                         android:padding="5dp"
                         android:text="Umar"
                         android:background="@color/colorTabBar"
-                        android:textColor="@color/colorPurple"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorPurple" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -99,9 +92,7 @@ of his closest companions led the religion."
                         android:padding="5dp"
                         android:text="Uthman"
                         android:background="@color/colorTabBar"
-                        android:textColor="@color/colorPurple"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorPurple" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -111,9 +102,7 @@ of his closest companions led the religion."
                         android:padding="5dp"
                         android:text="Ali"
                         android:background="@color/colorTabBar"
-                        android:textColor="@color/colorPurple"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorPurple" />
                 </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"
@@ -123,8 +112,7 @@ of his closest companions led the religion."
                     android:text="Together, they are sometimes called the ‘Rightly Guided
 Caliphs’. All four of the leaders lived closely with the
 Prophet (PBUH) during his prophethood and strongly
-supported him.\n\n
-They helped to further spread Islam and the sunnah for
+supported him.\n\nThey helped to further spread Islam and the sunnah for
 thirty years."
                     android:textColor="@color/colorBlack" />
                 <TextView
@@ -133,9 +121,7 @@ thirty years."
                     android:layout_margin="10dp"
                     android:padding="5dp"
                     android:text="The Companions"
-                    android:textColor="@color/colorPurple"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textColor="@color/colorPurple" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -143,25 +129,20 @@ thirty years."
                     android:padding="10dp"
                     android:text="Khadija (RA) was the first woman to accept Islam as she
 was one of the very first people to believe in
-Muhammad’s (PBUH) message.\n\n
-Khadija was a highly successful businesswoman despite
+Muhammad’s (PBUH) message.\n\nKhadija was a highly successful businesswoman despite
 the workforce being dominated by men. She worked
 with her father who was also an esteemed merchant in
 Makkah. When he died, Khadija continued her work and
 her trading business continued to flourish. It was the
-largest business in her tribe in Makkah.\n\n
-As a successful businesswoman, Khadija gained a
+largest business in her tribe in Makkah.\n\nAs a successful businesswoman, Khadija gained a
 reputation for being noble and fair and the people
 around her showed her a considerable amount of
 respect. She was known as ‘Al-Tahira’ meaning ‘the pure
-one’ because of her strong morals and modesty.\n\n
-The Prophet (PBUH) was also a merchant in Makkah and
+one’ because of her strong morals and modesty.\n\nThe Prophet (PBUH) was also a merchant in Makkah and
 was hired by Khadija during his early 20s. After seeing his
 good character, Khadija decided to propose to
 Muhammad (PBUH). He was 25 and Khadija was 15
-years older than him.\n\n
-Together, they had six children:
-"
+years older than him.\n\nTogether, they had six children:"
                     android:textColor="@color/colorBlack" />
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -177,8 +158,7 @@ Together, they had six children:
                         android:text="Al-Qasim"
                         android:background="@color/colorTabBar"
                         android:textColor="@color/colorPurple"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -188,9 +168,7 @@ Together, they had six children:
                         android:padding="5dp"
                         android:text="Abdullah"
                         android:background="@color/colorTabBar"
-                        android:textColor="@color/colorPurple"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorPurple" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -200,9 +178,7 @@ Together, they had six children:
                         android:padding="5dp"
                         android:text="Zaynab"
                         android:background="@color/colorTabBar"
-                        android:textColor="@color/colorPurple"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorPurple" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -212,9 +188,7 @@ Together, they had six children:
                         android:padding="5dp"
                         android:text="Ruqayya"
                         android:background="@color/colorTabBar"
-                        android:textColor="@color/colorPurple"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorPurple" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -223,9 +197,7 @@ Together, they had six children:
                         android:padding="5dp"
                         android:text="Umm Kulthum"
                         android:background="@color/colorTabBar"
-                        android:textColor="@color/colorPurple"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorPurple" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -235,9 +207,7 @@ Together, they had six children:
                         android:padding="5dp"
                         android:text="Fatima"
                         android:background="@color/colorTabBar"
-                        android:textColor="@color/colorPurple"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorPurple" />
                 </LinearLayout>
                 <TextView
                     android:layout_width="match_parent"
@@ -252,21 +222,17 @@ happy marriage and she supported him during the time
 the Quran was revealed to him. Even though the people
 of Makkah mocked the Prophet (PBUH) and accused him
 of lying, Khadija stood by him and helped him overcome
-the challenging times.\n\n
-During her life, Khadija was known to aid the poor and
+the challenging times.\n\nDuring her life, Khadija was known to aid the poor and
 needy. She was a wealthy woman, but she used her
 earnings to help the orphans, widows and the sick. Her
 character was so noble that Allah sent salaam to her
-through angel Jibra’il and the angel also greeted her.\n\n
-At the time of the Prophet (PBUH), it was common to
+through angel Jibra’il and the angel also greeted her.\n\nAt the time of the Prophet (PBUH), it was common to
 have multiple wives but Muhammad (PBUH) was only
 married to Khadija and their marriage lasted 25 years.
 This was until her death as Khadija passed away in the
-year 619 AD.\n\n
-However, her legacy remains as one of the most
+year 619 AD.\n\nHowever, her legacy remains as one of the most
 extraordinary women in history and she continues to
-inspire Muslim women across the world.\n\n
-Khadija was once described by Muhammad (PBUH) as
+inspire Muslim women across the world.\n\nKhadija was once described by Muhammad (PBUH) as
 one of the four greatest women of mankind. The other
 three strong and righteous Muslim women were:"
                     android:textColor="@color/colorBlack" />

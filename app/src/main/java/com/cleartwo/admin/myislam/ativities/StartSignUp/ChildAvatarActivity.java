@@ -10,10 +10,12 @@ import android.widget.ImageView;
 import com.cleartwo.admin.myislam.R;
 import com.cleartwo.admin.myislam.ativities.MainActivity;
 import com.cleartwo.admin.myislam.utilities.Const;
+import com.cleartwo.admin.myislam.utilities.DataProcessor;
 
 public class ChildAvatarActivity extends AppCompatActivity {
 
     ImageView avatar_img;
+    DataProcessor dataProcessor;
     int[] imgDrawables = {R.drawable.girl_logo,
             R.drawable.boy_logo};
 
@@ -22,6 +24,8 @@ public class ChildAvatarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_child_avatar);
 
+        dataProcessor = new DataProcessor(this);
+        dataProcessor.setInt("avatar",imgDrawables[0]);
         avatar_img = (ImageView) findViewById(R.id.avatar_img);
         ((ImageView) findViewById(R.id.left_button)).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,9 +73,11 @@ public class ChildAvatarActivity extends AppCompatActivity {
                 ContextCompat.getDrawable(this, imgDrawables[0]).getConstantState()) {
             avatar_img.setImageResource(imgDrawables[1]);
             Const.profileIcon = imgDrawables[1];
+            dataProcessor.setInt("avatar",imgDrawables[1]);
         } else {
             avatar_img.setImageResource(imgDrawables[0]);
             Const.profileIcon = imgDrawables[0];
+            dataProcessor.setInt("avatar",imgDrawables[0]);
         }
 
     }

@@ -68,7 +68,7 @@
             android:name=".ativities.StartSignUp.StartSignUpActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
         <activity
-            android:name=".ativities.SplashActivity"
+            android:name=".ativities.StartSignUp.SplashActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
 
              <intent-filter>

@@ -6,6 +6,8 @@ import com.cleartwo.admin.myislam.ativities.MainActivity;
 import com.cleartwo.admin.myislam.ativities.StartSignUp.ChildNameActivity;
 import com.cleartwo.admin.myislam.ativities.StartSignUp.SignUpEmailActivity;
 import com.cleartwo.admin.myislam.ativities.StartSignUp.StartSignUpActivity;
+import com.cleartwo.admin.myislam.fragments.GameIconFragment;
+import com.cleartwo.admin.myislam.fragments.HomeFragment;
 import com.cleartwo.admin.myislam.fragments.MenuFragment;
 import com.cleartwo.admin.myislam.modelClasses.SectionDetailsModel;
 import com.cleartwo.admin.myislam.modelClasses.TopicModel;
@@ -22,6 +24,8 @@ public class Const {
 
     // Fragments
     public static MenuFragment menuFragment;
+    public static HomeFragment homeFragment;
+    public static GameIconFragment gameIconFragment;
 
     public static int profileIcon = R.drawable.girl_logo;
     public static String profileName = "Islam App";
@@ -63,7 +67,7 @@ public class Const {
         modelList.add(new TopicModel("THE QURAN"));
         modelList.add(new TopicModel("DAY OF JUDGEMENT & LIFE AFTER DEATH"));
         sectionDetailsModel = new SectionDetailsModel("Basic Beliefs",
-                "There are five basic religious acts in Islam, collectively known as 'The Pillars of Islam'.",
+                "In Islam there are some basic beliefs.",
                 modelList);
     }
 
@@ -212,8 +216,9 @@ public class Const {
                         ". Jibra’il told him to read again and the Prophet told him again " +
                         "that he cannot. This was until he was told a third time and the angel recited:\n\n" +
                         "اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ\n\n" +
-                        "“Read in the name of your Lord who created!”\n\n" +
-                        "Prophet Muhammad (PBUH) repeated these words and this event marked the " +
+                        "\n\nIqra bismi rabbika alladhi khalaq"+
+                        "\n\n“Read in the name of your Lord who created!”\n\n"+
+                        "Prophet Muhammad (PBUH) repeated these words and this event marked the" +
                         "beginning of the revelation. The prophet was 40 years old at the time he was told " +
                         "that he was a prophet. Angel Jibra’il continued to bring parts of the Quran to the " +
                         "Prophet for 23 years, until it was all revealed. During this time, the Prophet was told " +

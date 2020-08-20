@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ativities.TheQuranActivity">
+
     <RelativeLayout
         android:id="@+id/tab_bar_view"
         android:layout_width="match_parent"
@@ -45,23 +46,22 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/tab_bar_view">
 
-        <ImageView
-            android:id="@+id/img_thinking"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/basic_beliefs_bg" />
-
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/img_thinking">
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="10dp"
                 android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_thinking"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/basic_beliefs_bg" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
@@ -75,6 +75,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_margin="10dp"
                     android:background="@drawable/round_corner_grey"
                     android:orientation="vertical">
 
@@ -108,9 +109,9 @@ then further divided into verses.\n\nIt was originally written in Arabic and mem
 companions of the Prophet Muhammed (PBUH). Since
 the Prophet’s time, Muslims around the world have
 continued to memorise the Quran and it has not
-changed over the last 1400 years
+changed over the last 1400 years.
 "
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorBlack" />
 
 
                     <TextView
@@ -120,7 +121,8 @@ changed over the last 1400 years
                         android:padding="10dp"
                         android:text="Why do Muslims read the Quran?"
                         android:textColor="@color/colorBlue"
-                        android:textStyle="bold" />
+                         />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -133,7 +135,7 @@ as a book of guidance. Muslims are expected to read the
 Quran and follow what it says, as it is the direct word
 of Allah.
 "
-                        android:textStyle="bold" />
+                        android:textColor="@color/colorBlack" />
 
                 </LinearLayout>
 
@@ -146,8 +148,8 @@ of Allah.
                         android:id="@+id/back_btn"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center"
                         android:layout_weight="1"
+                        android:gravity="center"
                         android:orientation="horizontal"
                         android:paddingBottom="20dp">
 
@@ -155,6 +157,7 @@ of Allah.
                             android:layout_width="60dp"
                             android:layout_height="50dp"
                             android:src="@drawable/back_button" />
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -171,24 +174,24 @@ of Allah.
                         android:id="@+id/next_btn"
                         android:layout_width="match_parent"
                         android:layout_height="80dp"
-                        android:gravity="right"
                         android:layout_gravity="right"
                         android:layout_weight="1"
+                        android:gravity="right"
                         android:orientation="horizontal"
                         android:paddingBottom="20dp">
 
                         <TextView
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
-                            android:gravity="center_vertical"
                             android:layout_weight="1"
+                            android:gravity="center_vertical"
                             android:text="Day of Judgement &amp; Life After Death"
                             android:textColor="@color/colorAppRed"
                             android:textStyle="bold" />
 
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="50dp"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
                             android:src="@drawable/next_button" />
                     </LinearLayout>
 

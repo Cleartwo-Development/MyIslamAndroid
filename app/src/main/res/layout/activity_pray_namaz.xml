@@ -89,7 +89,7 @@
                     android:text="Niyyah"
                     android:layout_margin="5dp"
                     android:textColor="@color/colorPurple"
-                    android:textSize="22sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
