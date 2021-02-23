@@ -1,7 +1,7 @@
 package com.cleartwo.admin.myislam.ativities;
 
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.MediaController;
@@ -17,7 +17,6 @@ public class FullScreenVideoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_full_screen_video);
 
@@ -30,7 +29,8 @@ public class FullScreenVideoActivity extends AppCompatActivity {
 //            getSupportActionBar().hide();
         }
 
-        Uri videoUri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.wudu_process);
+//        Uri videoUri = Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.wudu_process);
+        Uri videoUri = Uri.parse("android.resource://"+getPackageName()+"/");
 
         videoView.setVideoURI(videoUri);
 

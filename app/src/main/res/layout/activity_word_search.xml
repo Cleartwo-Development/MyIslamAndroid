@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/word_srch_bg"
+    tools:context=".ativities.WuduActivity">
+
+    <RelativeLayout
+        android:id="@+id/tab_bar_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingTop="24dp">
+
+
+        <ImageView
+            android:id="@+id/back_to_game"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitEnd"
+            android:src="@drawable/back_game" />
+
+        <ImageView
+            android:id="@+id/tryAgain"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/blue_btn"
+            android:padding="10dp"
+            android:src="@drawable/restore_bg"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/word_srch_logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/word_srch_logo" />
+    <TextView
+        android:id="@+id/word_srch_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/word_srch_logo"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorWhite"
+        android:text="Clues: The Prophet"/>
+
+    <GridView
+        android:id="@+id/simpleGridView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomView"
+        android:layout_below="@id/word_srch_text"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_corner_purple"
+        android:footerDividersEnabled="false"
+        android:numColumns="15" />
+
+
+    <LinearLayout
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/srch_name_bg"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ADAM"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="ADAM"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/ISA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="ISA"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/MUSA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="MUSA"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/YAHYA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="YAHYA"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:textColor="@color/colorWhite">
+
+            <TextView
+                android:id="@+id/IBRAHIM"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="IBRAHIM"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/ISMAIL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="ISMAIL"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/NUH"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="NUH"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/YAQUB"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="YAQUB"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/IDREES"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="IDREES"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/MUHAMMAD"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="MUHAMMAD"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/SULEIMAN"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="SULEIMAN"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/YUSUF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="YUSUF"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

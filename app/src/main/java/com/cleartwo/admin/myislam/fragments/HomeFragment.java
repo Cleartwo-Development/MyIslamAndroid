@@ -1,16 +1,16 @@
 package com.cleartwo.admin.myislam.fragments;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.cleartwo.admin.myislam.R;
 import com.cleartwo.admin.myislam.utilities.Const;
+import com.cleartwo.admin.myislam.utilities.ConstMenu;
 
 public class HomeFragment extends Fragment {
 
@@ -62,8 +62,8 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 try {
-                    Const.mainActivity.tabLayout.getTabAt(1).select();
-                }catch (Exception e){
+                    Const.mainActivity.tabLayout.getTabAt(2).select();
+                } catch (Exception e) {
 //                    Toast.makeText(getActivity(), "Some thing went wrong :-(" , Toast.LENGTH_SHORT).show();
                 }
             }
@@ -73,17 +73,18 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 try {
+                    ConstMenu.selectedMenu = -101;
                     Const.mainActivity.tabLayout.getTabAt(2).select();
-                }catch (Exception e){
+                } catch (Exception e) {
 //                    Toast.makeText(getActivity(), "Some thing went wrong :-(" , Toast.LENGTH_SHORT).show();
                 }
             }
         });
 
         try {
-            section_name.setText(Const.gameIconFragment.web[Const.gridSelectedNumber]);
+            section_name.setText(ConstMenu.web[Const.gridSelectedNumber]);
             sectionTitle_bg.setImageResource(imageBgId[Const.gridSelectedNumber]);
-        }catch (Exception e){
+        } catch (Exception e) {
 //            Toast.makeText(getActivity(), "Some thing went wrong :-(" , Toast.LENGTH_SHORT).show();
         }
     }

@@ -1,7 +1,12 @@
 package com.cleartwo.admin.myislam.utilities;
 
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.os.Handler;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
 
 public class DataProcessor {
 
@@ -51,6 +56,22 @@ public class DataProcessor {
     public static void setClearData() {
         SharedPreferences prefs = context.getSharedPreferences(PREFS_NAME, 0);
         prefs.edit().clear().commit();
+    }
+
+    public static void slide(final ImageView view, final int size) {
+        ValueAnimator anim = ValueAnimator.ofInt(view.getMeasuredHeight(), size);
+        anim.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator valueAnimator) {
+                int val = (Integer) valueAnimator.getAnimatedValue();
+                ViewGroup.LayoutParams layoutParams = view.getLayoutParams();
+                layoutParams.height = val;
+                view.setLayoutParams(layoutParams);
+            }
+        });
+        anim.setDuration(100);
+        anim.start();
+
     }
 }
 

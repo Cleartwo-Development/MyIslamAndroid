@@ -1,19 +1,17 @@
 package com.cleartwo.admin.myislam.ativities;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.cleartwo.admin.myislam.R;
 import com.cleartwo.admin.myislam.adapter.MultiChoiceAdapter;
-import com.cleartwo.admin.myislam.adapter.TopicAdapter;
 import com.cleartwo.admin.myislam.modelClasses.QuestionsModel;
-import com.cleartwo.admin.myislam.modelClasses.TopicModel;
 import com.cleartwo.admin.myislam.utilities.QuesAnsConst;
 
 import java.util.ArrayList;

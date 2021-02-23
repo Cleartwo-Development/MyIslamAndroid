@@ -1,8 +1,7 @@
 package com.cleartwo.admin.myislam.ativities;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.Html;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;

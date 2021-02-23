@@ -2,18 +2,16 @@ package com.cleartwo.admin.myislam.ativities;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.cleartwo.admin.myislam.R;
-import com.cleartwo.admin.myislam.utilities.Const;
 import com.cleartwo.admin.myislam.utilities.DataProcessor;
 
 public class WuduActivity extends AppCompatActivity {
@@ -47,7 +45,7 @@ public class WuduActivity extends AppCompatActivity {
         wudu_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(WuduActivity.this,FullScreenVideoActivity.class));
+                startActivity(new Intent(WuduActivity.this,AnimationActivity.class));
                 overridePendingTransition(R.anim.enter_ani, R.anim.exit_ani);
             }
         });

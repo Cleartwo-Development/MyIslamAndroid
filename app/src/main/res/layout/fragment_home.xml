@@ -103,7 +103,7 @@
             android:layout_marginRight="10dp"
             android:foreground="@drawable/corner_transparent"
             android:scaleType="fitXY"
-            android:src="@drawable/section_title_bg" />
+            android:src="@drawable/blue_rec_bg" />
 
         <TextView
             android:id="@+id/section_name"

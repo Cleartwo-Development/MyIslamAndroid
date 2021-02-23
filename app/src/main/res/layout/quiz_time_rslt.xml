@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ativities.AngelsActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/result_bg"
+        android:layout_margin="25dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="300dp"
+        android:src="@drawable/app_special_icons" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="25dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="Excellent!"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tota_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="Your scored 0/0"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="26sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/play_again"
+                android:layout_width="220dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:background="@drawable/unselected_btn"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/back_button" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:paddingLeft="10dp"
+                    android:text="Play Again"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/next_game"
+                android:layout_width="220dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/unselected_btn"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:lines="1"
+                    android:paddingLeft="30dp"
+                    android:text="Next Game"
+                    android:textColor="@color/colorPurple"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:src="@drawable/next_button" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/result_back"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18dp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/back_btn" />
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/quiz2_logo" />
+
+
+
+</RelativeLayout>

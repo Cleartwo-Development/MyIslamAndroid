@@ -6,9 +6,9 @@ import com.cleartwo.admin.myislam.ativities.MainActivity;
 import com.cleartwo.admin.myislam.ativities.StartSignUp.ChildNameActivity;
 import com.cleartwo.admin.myislam.ativities.StartSignUp.SignUpEmailActivity;
 import com.cleartwo.admin.myislam.ativities.StartSignUp.StartSignUpActivity;
-import com.cleartwo.admin.myislam.fragments.GameIconFragment;
+import com.cleartwo.admin.myislam.fragments.GamesFragment;
 import com.cleartwo.admin.myislam.fragments.HomeFragment;
-import com.cleartwo.admin.myislam.fragments.MenuFragment;
+import com.cleartwo.admin.myislam.fragments.DetailsFragment;
 import com.cleartwo.admin.myislam.modelClasses.SectionDetailsModel;
 import com.cleartwo.admin.myislam.modelClasses.TopicModel;
 
@@ -23,9 +23,9 @@ public class Const {
     public static MainActivity mainActivity;
 
     // Fragments
-    public static MenuFragment menuFragment;
+    public static DetailsFragment detailsFragment;
     public static HomeFragment homeFragment;
-    public static GameIconFragment gameIconFragment;
+    public static GamesFragment gamesFragment;
 
     public static int profileIcon = R.drawable.girl_logo;
     public static String profileName = "Islam App";

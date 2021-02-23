@@ -10,8 +10,7 @@
         android:id="@+id/grid_image"
         android:layout_width="match_parent"
         android:src="@drawable/blue_btn"
-        android:layout_height="90dp">
-    </ImageView>
+        android:layout_height="90dp"/>
 
     <TextView
         android:id="@+id/grid_text"

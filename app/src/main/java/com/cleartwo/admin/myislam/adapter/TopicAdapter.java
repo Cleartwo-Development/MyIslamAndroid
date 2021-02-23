@@ -3,7 +3,7 @@ package com.cleartwo.admin.myislam.adapter;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +18,7 @@ import com.cleartwo.admin.myislam.ativities.JudgementAndLifeActivity;
 import com.cleartwo.admin.myislam.ativities.MessengersActivity;
 import com.cleartwo.admin.myislam.ativities.MultipleChoiceQActivity;
 import com.cleartwo.admin.myislam.ativities.PrayNamazActivity;
-import com.cleartwo.admin.myislam.ativities.ProphetWordSearchActivity;
+import com.cleartwo.admin.myislam.ativities.WordSearchActivity;
 import com.cleartwo.admin.myislam.ativities.SalatSnapGameActivity;
 import com.cleartwo.admin.myislam.ativities.TheQuranActivity;
 import com.cleartwo.admin.myislam.ativities.TitleDetailsActivity;
@@ -163,7 +163,7 @@ public class TopicAdapter extends RecyclerView.Adapter<TopicAdapter.MyViewHolder
                 QuesAnsConst.initQueAnsPROPHET();
                 intTitleDetailsActivity(MultipleChoiceQActivity.class);
             } else if (iClick == 5) {
-                intTitleDetailsActivity(ProphetWordSearchActivity.class);
+                intTitleDetailsActivity(WordSearchActivity.class);
             } else if (iClick == 6) {
                 intTitleDetailsActivity(SalatSnapGameActivity.class);
             }

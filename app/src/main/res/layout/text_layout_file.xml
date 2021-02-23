@@ -3,13 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="1dp">
+    >
 
     <TextView
         android:id="@+id/strWords"
         android:layout_width="match_parent"
-        android:layout_height="25dp"
+        android:layout_height="match_parent"
         android:gravity="center"
+        android:padding="2dp"
         android:text="F"
         android:textColor="@color/colorBlack" />
 </LinearLayout>

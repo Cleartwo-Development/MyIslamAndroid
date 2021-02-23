@@ -6,11 +6,16 @@
 
     <color name="colorTabBar">#dcdcdc</color>
     <color name="colorBlack">#000</color>
+    <color name="colorGreen">#228B22</color>
+    <color name="greenTransparent">#F2FACE</color>
     <color name="colorBlue">#2db1e5</color>
+    <color name="colorLightBlue">#cc2db1e5</color>
     <color name="transparentBlue">#982db1e5</color>
+    <color name="greyTransparent">#10000000</color>
     <color name="colorGrey">#666</color>
     <color name="colorWhite">#fff</color>
-    <color name="colorPurple">#800080 </color>
+    <color name="colorPurple">#714083</color>
     <color name="colorAppRed">#ec4a61 </color>
-    <color name="colorText">#c55911 </color>
+    <color name="colorTransRed">#98ec4a61 </color>
+    <color name="colorText">#c55911</color>
 </resources>

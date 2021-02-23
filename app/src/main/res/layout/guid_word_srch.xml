@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".ativities.AngelsActivity">
+
+
+    <ImageView
+        android:id="@+id/dialog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/guid_img" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/skip_txt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/text_bg"
+            android:drawableEnd="@drawable/right_errow"
+            android:drawablePadding="10dp"
+            android:drawableTint="@color/colorWhite"
+            android:gravity="end"
+            android:padding="10dp"
+            android:text="skip"
+            android:textColor="@color/colorWhite"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Find words according to the theme,
+by swiping your finger across across
+each letter in a straight line "
+            android:textColor="@color/colorPurple"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/lets_go"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingLeft="30dp"
+                android:text="Let's Go"
+                android:textColor="@color/colorAppRed"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/next_button" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

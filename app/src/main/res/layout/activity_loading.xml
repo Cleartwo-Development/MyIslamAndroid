@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start_signup_bg"
+    tools:context=".ativities.LoadingActivity">
+
+    <ImageView
+        android:id="@+id/back_to_game"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/back_game" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/true_f_logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="Loading..."
+            android:textColor="@color/colorWhite"
+            android:textSize="26sp"
+            android:textStyle="italic" />
+        <com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar
+            android:id="@+id/progress_bar_1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:maxHeight="20dp"
+            android:minHeight="20dp"
+            android:layout_margin="20dp"
+            android:progress="0"
+            app:backgroundColor="@color/transparentBlue"
+            app:progressColor="@color/colorWhite"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,33 +1,33 @@
 package com.cleartwo.admin.myislam.ativities;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.ViewPager;
 import android.view.View;
-import android.support.v4.view.GravityCompat;
-import android.support.v7.app.ActionBarDrawerToggle;
+import androidx.core.view.GravityCompat;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
-import android.support.design.widget.NavigationView;
-import android.support.v4.widget.DrawerLayout;
+import com.google.android.material.navigation.NavigationView;
+import androidx.drawerlayout.widget.DrawerLayout;
 
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.cleartwo.admin.myislam.R;
 import com.cleartwo.admin.myislam.ativities.StartSignUp.ChildNameActivity;
-import com.cleartwo.admin.myislam.ativities.StartSignUp.StartSignUpActivity;
-import com.cleartwo.admin.myislam.fragments.GameIconFragment;
+import com.cleartwo.admin.myislam.fragments.GamesFragment;
 import com.cleartwo.admin.myislam.fragments.HomeFragment;
-import com.cleartwo.admin.myislam.fragments.MenuFragment;
+import com.cleartwo.admin.myislam.fragments.DetailsFragment;
 import com.cleartwo.admin.myislam.utilities.Const;
+import com.cleartwo.admin.myislam.utilities.ConstMenu;
 import com.cleartwo.admin.myislam.utilities.DataProcessor;
 
 import java.util.ArrayList;
@@ -82,7 +82,6 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
 
-
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
 
@@ -100,15 +99,50 @@ public class MainActivity extends AppCompatActivity
         tabLayout.getTabAt(2).setIcon(tabIcons[2]);
 
         ImageView imgView = new ImageView(MainActivity.this);
+        int width = 100;
+        int height = 100;
+        LinearLayout.LayoutParams parms = new LinearLayout.LayoutParams(width,height);
+        imgView.setLayoutParams(parms);
         imgView.setImageResource(R.drawable.bar_game_btn);
         tabLayout.getTabAt(1).setCustomView(imgView);
+
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                switch (tab.getPosition()) {
+                    case 2:
+                        if (ConstMenu.selectedMenu != -101) {
+                            ConstMenu.selectedMenu = 100;
+                        }else {
+                            ConstMenu.selectedMenu = 0;
+                        }
+                        break;
+                }
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+                ConstMenu.selectedMenu = 100;
+                try{
+                    Const.detailsFragment.refreshFragment();
+                }catch (Exception e){
+
+                }
+            }
+        });
     }
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFrag(new HomeFragment(), "ONE");
-        adapter.addFrag(new GameIconFragment(), "TWO");
-        adapter.addFrag(new MenuFragment(), "THREE");
+        adapter.addFrag(new GamesFragment(), "TWO");
+        adapter.addFrag(new DetailsFragment(), "THREE");
+//        adapter.addFrag(new MenuFragment(), "THREE");
         viewPager.setAdapter(adapter);
     }
 

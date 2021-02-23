@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/blue_gradient.xml" value="0.3609375" />
+        <entry key="app/src/main/res/drawable-v24/purpul_line_bg.xml" value="0.3609375" />
+        <entry key="app/src/main/res/drawable-v24/text_purpule_bg.xml" value="0.3609375" />
+        <entry key="app/src/main/res/drawable-v24/text_red_bg.xml" value="0.3609375" />
+        <entry key="app/src/main/res/drawable/layout_bg.xml" value="0.3609375" />
+        <entry key="app/src/main/res/drawable/left_to_right_out.xml" value="0.3609375" />
+        <entry key="app/src/main/res/drawable/purpul_line_bg.xml" value="0.3609375" />
+        <entry key="app/src/main/res/drawable/red_result_bg.xml" value="0.294140625" />
+        <entry key="app/src/main/res/drawable/result_bg.xml" value="0.294140625" />
+        <entry key="app/src/main/res/drawable/round_corner_blue.xml" value="0.294140625" />
+        <entry key="app/src/main/res/drawable/round_corner_grey.xml" value="0.294140625" />
+        <entry key="app/src/main/res/drawable/round_corner_purple.xml" value="0.294140625" />
+        <entry key="app/src/main/res/drawable/select_purpl_btn.xml" value="0.3609375" />
+        <entry key="app/src/main/res/drawable/selected_red_btn.xml" value="0.3609375" />
+        <entry key="app/src/main/res/drawable/text_blue_bg.xml" value="0.3609375" />
+        <entry key="app/src/main/res/drawable/text_green_bg.xml" value="0.3609375" />
+        <entry key="app/src/main/res/drawable/text_orange_bg.xml" value="0.3609375" />
+        <entry key="app/src/main/res/drawable/text_red_bg.xml" value="0.3609375" />
+        <entry key="app/src/main/res/drawable/unselected_btn.xml" value="0.3609375" />
+        <entry key="app/src/main/res/layout/activity_animation.xml" value="0.28203125" />
+        <entry key="app/src/main/res/layout/activity_chiled_name.xml" value="0.28203125" />
+        <entry key="app/src/main/res/layout/activity_loading.xml" value="0.34479166666666666" />
+        <entry key="app/src/main/res/layout/activity_prophet_word_search.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_quiz_load.xml" value="0.29188712522045857" />
+        <entry key="app/src/main/res/layout/activity_quiz_time.xml" value="0.24163319946452477" />
+        <entry key="app/src/main/res/layout/activity_salat_snap.xml" value="0.34479166666666666" />
+        <entry key="app/src/main/res/layout/activity_search_load.xml" value="0.34479166666666666" />
+        <entry key="app/src/main/res/layout/activity_spot.xml" value="0.24163319946452477" />
+        <entry key="app/src/main/res/layout/activity_spot1.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/activity_spot2.xml" value="0.24163319946452477" />
+        <entry key="app/src/main/res/layout/activity_spot3.xml" value="0.24163319946452477" />
+        <entry key="app/src/main/res/layout/activity_spot_load.xml" value="0.13688085676037484" />
+        <entry key="app/src/main/res/layout/activity_true_false.xml" value="0.23497267759562843" />
+        <entry key="app/src/main/res/layout/activity_word_search.xml" value="0.34479166666666666" />
+        <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.34479166666666666" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.28203125" />
+        <entry key="app/src/main/res/layout/guid_word_srch.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/item.xml" value="0.29188712522045857" />
+        <entry key="app/src/main/res/layout/quiz_time_rslt.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/result_dialog.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/skip_dialog.xml" value="0.24077868852459017" />
+        <entry key="app/src/main/res/layout/skip_word_srch.xml" value="0.16" />
+        <entry key="app/src/main/res/layout/spot1_rslt.xml" value="0.24163319946452477" />
+        <entry key="app/src/main/res/layout/srch_rslt_dialog.xml" value="0.3211050724637681" />
+        <entry key="app/src/main/res/layout/text_layout_file.xml" value="0.34479166666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
